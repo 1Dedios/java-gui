@@ -10,7 +10,7 @@ public class MyRestaurant extends JFrame {
 
         Customer = new JLabel("Customer No:");
         Name = new JLabel("Name:");
-        Contact = new JLabel("Contact");
+        Contact = new JLabel("Contact:");
 
         tfNumber = new JTextField();
         tfName = new JTextField();
@@ -29,6 +29,14 @@ public class MyRestaurant extends JFrame {
         getContentPane().add(tfName);
         getContentPane().add(Contact);
         getContentPane().add(tfContact);
+
+        setVisible(true);
+        setVisible(true);
+        setVisible(true);
+        setVisible(true);
+        setVisible(true);
+        setVisible(true);
+
 
 
 
