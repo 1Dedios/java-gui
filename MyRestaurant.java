@@ -18,11 +18,11 @@ public class MyRestaurant extends JFrame {
         tfContact = new JTextField();
 
         Customer.setBounds(20, 50, 120, 30);
-        tfNumber.setBounds(50, 50, 120, 30);
-        Name.setBounds(20, 50, 50, 50);
-        tfName.setBounds(20, 40 , 40, 50);
-        Contact.setBounds(20, 80, 50, 70);
-        tfContact.setBounds(20, 130, 90, 100);
+        tfNumber.setBounds(120, 50, 150, 30);
+        Name.setBounds(20, 80, 50, 30);
+        tfName.setBounds(120, 80 , 150, 30);
+        Contact.setBounds(20, 110, 100, 30);
+        tfContact.setBounds(120, 110, 150, 30);
 
         getContentPane().add(Customer);
         getContentPane().add(tfNumber);
