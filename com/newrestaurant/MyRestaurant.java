@@ -1,6 +1,9 @@
 package com.newrestaurant;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.print.PrinterException;
 
 public class MyRestaurant extends JFrame {
     JLabel customer;
@@ -26,7 +29,6 @@ public class MyRestaurant extends JFrame {
     JRadioButton r2;
 
     JTextArea area1;
-    JTextArea area2;
 
     public MyRestaurant() {
         setTitle("My Sophisticated Restaurant");
@@ -84,8 +86,39 @@ public class MyRestaurant extends JFrame {
 
 
         reset.setBounds(395, 100, 80, 40);
-        print.setBounds(470, 100, 80, 40);
-        receipt.setBounds(545, 100, 80, 40);
+        reset.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tfNumber.setText("");
+                tfContact.setText("");
+                tfName.setText("");
+                area1.setText("");
+            }
+        });
+
+        receipt.setBounds(470, 100, 80, 40);
+        receipt.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                area1.setText("My Sophisticated Restaurant");
+                area1.setText(area1.getText() + "\n" + "Customer No: " +
+                        tfNumber.getText() + "\n" + "Name: " +
+                        tfName.getText() + "\n" + "Contact: " +
+                        tfContact.getText());
+            }
+        });
+
+        print.setBounds(545, 100, 80, 40);
+        print.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    area1.print();
+                } catch (PrinterException example) {
+                    System.out.println(example.getMessage());
+                }
+            }
+        });
 
         area1 = new JTextArea();
         area1.setBounds(395, 150, 240, 300);
