@@ -30,7 +30,7 @@ public class MyRestaurant extends JFrame {
 
     public MyRestaurant() {
         setTitle("My Sophisticated Restaurant");
-        setSize(700, 500);
+        setSize(700, 650);
         setLayout(null);
 
         customer = new JLabel("Customer No:");
@@ -66,18 +66,29 @@ public class MyRestaurant extends JFrame {
 
 
         drink.setBounds(20, 250, 120, 30);
+        String[] drinks = {"Lemonade", "Raspberry Iced Tea", "Pink Lemonade", "Signature House Drink"};
+        cb2 = new JComboBox(drinks);
+        cb2.setBounds(100, 250, 160, 30);
 
 
         type.setBounds(20, 300, 120, 30);
         r1 = new JRadioButton("Diet");
-        r2 = new JRadioButton("Regulars");
+        r2 = new JRadioButton("Regular");
         r1.setBounds(100, 300, 60, 30);
+        r2.setBounds(170, 300,100, 30);
+        // ButtonGroup class to avoid two radio button selections
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(r1);
+        bg.add(r2);
 
 
 
         reset.setBounds(395, 100, 80, 40);
         print.setBounds(470, 100, 80, 40);
         receipt.setBounds(545, 100, 80, 40);
+
+        area1 = new JTextArea();
+        area1.setBounds(395, 150, 240, 300);
 
 
         getContentPane().add(customer);
@@ -93,6 +104,7 @@ public class MyRestaurant extends JFrame {
         getContentPane().add(cb1);
 
         getContentPane().add(drink);
+        getContentPane().add(cb2);
 
         getContentPane().add(type);
         getContentPane().add(r1);
@@ -102,7 +114,10 @@ public class MyRestaurant extends JFrame {
         getContentPane().add(reset);
         getContentPane().add(print);
         getContentPane().add(receipt);
+        getContentPane().add(area1);
 
+        setVisible(true);
+        setVisible(true);
         setVisible(true);
         setVisible(true);
         setVisible(true);
