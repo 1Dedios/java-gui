@@ -18,6 +18,16 @@ public class MyRestaurant extends JFrame {
     JButton print;
     JButton receipt;
 
+    JComboBox cb1;
+    JComboBox cb2;
+
+
+    JRadioButton r1;
+    JRadioButton r2;
+
+    JTextArea area1;
+    JTextArea area2;
+
     public MyRestaurant() {
         setTitle("My Sophisticated Restaurant");
         setSize(700, 500);
@@ -50,12 +60,18 @@ public class MyRestaurant extends JFrame {
         tfContact.setBounds(120, 110, 150, 30);
 
         food.setBounds(20, 200, 120, 30);
+        String[] foods = {"Pepperoni Pizza", "Salmon Roll", "Cheese Burger", "Penne a la Vodka" };
+        cb1 = new JComboBox(foods);
+        cb1.setBounds(100, 200, 160,30);
 
 
         drink.setBounds(20, 250, 120, 30);
 
 
         type.setBounds(20, 300, 120, 30);
+        r1 = new JRadioButton("Diet");
+        r2 = new JRadioButton("Regulars");
+        r1.setBounds(100, 300, 60, 30);
 
 
 
@@ -74,14 +90,22 @@ public class MyRestaurant extends JFrame {
         getContentPane().add(tfContact);
 
         getContentPane().add(food);
+        getContentPane().add(cb1);
+
         getContentPane().add(drink);
+
         getContentPane().add(type);
+        getContentPane().add(r1);
+        getContentPane().add(r2);
 
 
         getContentPane().add(reset);
         getContentPane().add(print);
         getContentPane().add(receipt);
 
+        setVisible(true);
+        setVisible(true);
+        setVisible(true);
         setVisible(true);
         setVisible(true);
         setVisible(true);
