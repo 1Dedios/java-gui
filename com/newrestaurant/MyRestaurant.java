@@ -1,9 +1,23 @@
+package com.newrestaurant;
+
 import javax.swing.*;
 
 public class MyRestaurant extends JFrame {
-    JLabel customer, name, contact, food, drink, type;
-    JTextField tfNumber, tfName, tfContact, tfFood, tfDrink, tfType;
-    JButton reset, print, receipt;
+    JLabel customer;
+    JLabel name;
+    JLabel contact;
+    JLabel food;
+    JLabel drink;
+    JLabel type;
+    JTextField tfNumber;
+    JTextField tfName;
+    JTextField tfContact;
+    JTextField tfFood;
+    JTextField tfDrink;
+    JTextField tfType;
+    JButton reset;
+    JButton print;
+    JButton receipt;
 
     public MyRestaurant() {
         setTitle("My Sophisticated Restaurant");
@@ -47,16 +61,22 @@ public class MyRestaurant extends JFrame {
 
         getContentPane().add(customer);
         getContentPane().add(tfNumber);
+
         getContentPane().add(name);
         getContentPane().add(tfName);
+
         getContentPane().add(contact);
         getContentPane().add(tfContact);
+
         getContentPane().add(food);
         //getContentPane().add(tfFood);
+
         getContentPane().add(drink);
         getContentPane().add(tfDrink);
+
         getContentPane().add(type);
         getContentPane().add(tfType);
+
         getContentPane().add(reset);
 
         setVisible(true);
@@ -80,10 +100,6 @@ public class MyRestaurant extends JFrame {
 
 
     }
-
-
-
-
     public static void main (String [] args) {
         new MyRestaurant();
     }
