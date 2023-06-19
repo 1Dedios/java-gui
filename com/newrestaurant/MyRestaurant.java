@@ -9,12 +9,11 @@ public class MyRestaurant extends JFrame {
     JLabel food;
     JLabel drink;
     JLabel type;
+
     JTextField tfNumber;
     JTextField tfName;
     JTextField tfContact;
-    JTextField tfFood;
-    JTextField tfDrink;
-    JTextField tfType;
+
     JButton reset;
     JButton print;
     JButton receipt;
@@ -34,8 +33,12 @@ public class MyRestaurant extends JFrame {
         tfNumber = new JTextField();
         tfName = new JTextField();
         tfContact = new JTextField();
-        tfDrink = new JTextField();
-        tfType = new JTextField();
+
+
+        reset = new JButton("Reset");
+        print = new JButton("Print");
+        receipt = new JButton("Receipt");
+
 
         customer.setBounds(20, 50, 120, 30);
         tfNumber.setBounds(120, 50, 150, 30);
@@ -47,16 +50,18 @@ public class MyRestaurant extends JFrame {
         tfContact.setBounds(120, 110, 150, 30);
 
         food.setBounds(20, 200, 120, 30);
-        //tfFood.setBounds(0, 140, 150, 30);
+
 
         drink.setBounds(20, 250, 120, 30);
-        //tfDrink.setBounds(120, 170, );
+
 
         type.setBounds(20, 300, 120, 30);
-        //tfType.setBounds(120, 200, 30);
 
-        reset = new JButton("Reset");
-        reset.setBounds(400, 100, 80, 40);
+
+
+        reset.setBounds(395, 100, 80, 40);
+        print.setBounds(470, 100, 80, 40);
+        receipt.setBounds(545, 100, 80, 40);
 
 
         getContentPane().add(customer);
@@ -69,16 +74,16 @@ public class MyRestaurant extends JFrame {
         getContentPane().add(tfContact);
 
         getContentPane().add(food);
-        //getContentPane().add(tfFood);
-
         getContentPane().add(drink);
-        getContentPane().add(tfDrink);
-
         getContentPane().add(type);
-        getContentPane().add(tfType);
+
 
         getContentPane().add(reset);
+        getContentPane().add(print);
+        getContentPane().add(receipt);
 
+        setVisible(true);
+        setVisible(true);
         setVisible(true);
         setVisible(true);
         setVisible(true);
