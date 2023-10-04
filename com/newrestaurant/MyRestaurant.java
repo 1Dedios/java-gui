@@ -105,7 +105,7 @@ public class MyRestaurant extends JFrame {
                         tfNumber.getText() + "\n" + "Name: " +
                         tfName.getText() + "\n" + "Contact: " +
                         tfContact.getText());
-                area1.setText(area1.getText() + "\n" + "\nFood: " + cb1.getSelectedItem() + "\nDrink: " + cb2.getSelectedItem() + "\nType: " + bg.toString());
+                area1.setText(area1.getText() + "\n" + "\nFood: " + cb1.getSelectedItem() + "\nDrink: " + cb2.getSelectedItem());
             }
         });
 
