@@ -100,11 +100,12 @@ public class MyRestaurant extends JFrame {
         receipt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                area1.setText("My Sophisticated Restaurant");
+                area1.setText("My Sophisticated Restaurant\n");
                 area1.setText(area1.getText() + "\n" + "Customer No: " +
                         tfNumber.getText() + "\n" + "Name: " +
                         tfName.getText() + "\n" + "Contact: " +
                         tfContact.getText());
+                area1.setText(area1.getText() + "\n" + "\nFood: " + cb1.getSelectedItem() + "\nDrink: " + cb2.getSelectedItem() + "\nType: " + bg.toString());
             }
         });
 
