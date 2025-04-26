@@ -1,6 +1,6 @@
 # Restaurant App
 
-A restaurant order taker and receipt generator in Java. Built with the Swing GUI package in Java 11.
+A restaurant order taker and receipt generator in Java. Built with the Awt and Swing GUI package in Java 11.
 
 ## Demo
 
